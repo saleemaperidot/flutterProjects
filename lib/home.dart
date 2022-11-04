@@ -5,7 +5,9 @@ import 'package:my_facebookui/sections/headerButtonSection.dart';
 import 'package:my_facebookui/sections/roomSection.dart';
 import 'package:my_facebookui/sections/statusSection.dart';
 import 'package:my_facebookui/sections/storiesSection.dart';
+import 'package:my_facebookui/widgetsSample/assets.dart';
 import 'package:my_facebookui/widgetsSample/circularButton.dart';
+import 'package:my_facebookui/widgetsSample/postCard.dart';
 
 class Home extends StatelessWidget {
   //const Home({super.key});
@@ -67,6 +69,11 @@ class Home extends StatelessWidget {
             thickDivider,
             StoriesSection(),
             thickDivider,
+            PostCard(
+              profilePicture: sundarpichai,
+              profileName: "Sundar Pichai",
+              PublishedAt: "3h",
+            ),
           ],
         ),
       ),

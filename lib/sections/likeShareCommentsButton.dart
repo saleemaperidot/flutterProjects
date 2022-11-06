@@ -5,7 +5,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 //import 'package:flutter/material.dart';
 
-class HeaderButtonSection extends StatelessWidget {
+class LikeShareComment extends StatelessWidget {
   //const HeaderButtonSection({super.key});
   Widget verticalDivider = const VerticalDivider(
     thickness: 1,
@@ -40,27 +40,27 @@ class HeaderButtonSection extends StatelessWidget {
             buttonAction: () {
               print("Go Live");
             },
-            buttonColor: Colors.red,
-            buttonIcon: Icons.video_call,
-            buttonLabel: "Vedio",
+            buttonColor: Color.fromARGB(255, 33, 32, 32),
+            buttonIcon: Icons.thumb_up_off_alt_outlined,
+            buttonLabel: "Like",
           ),
           verticalDivider,
           headerbuttons(
             buttonAction: () {
               print("Take Photo");
             },
-            buttonColor: Colors.green,
-            buttonIcon: Icons.photo_library,
-            buttonLabel: "Photo",
+            buttonColor: Colors.grey,
+            buttonIcon: Icons.message_outlined,
+            buttonLabel: "Comment",
           ),
           verticalDivider,
           headerbuttons(
             buttonAction: () {
               print("create Chat room");
             },
-            buttonColor: Colors.purple,
-            buttonIcon: Icons.video_call,
-            buttonLabel: "Room",
+            buttonColor: Colors.grey,
+            buttonIcon: Icons.share_outlined,
+            buttonLabel: "Share",
           ),
         ],
       ),

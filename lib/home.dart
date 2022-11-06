@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:my_facebookui/sections/headerButtonSection.dart';
+import 'package:my_facebookui/sections/likeShareCommentsButton.dart';
 import 'package:my_facebookui/sections/roomSection.dart';
 import 'package:my_facebookui/sections/statusSection.dart';
 import 'package:my_facebookui/sections/storiesSection.dart';
@@ -73,7 +74,64 @@ class Home extends StatelessWidget {
               profilePicture: sundarpichai,
               profileName: "Sundar Pichai",
               PublishedAt: "3h",
+              title: "powerfull",
+              PostedImage: sundarpichaiStory,
+              bluetickflag: true,
+              likes: "15K",
+              comments: "30",
+              share: "600",
             ),
+            Divider(
+              thickness: 2,
+              color: Colors.grey[400],
+            ),
+            LikeShareComment(),
+            Divider(
+              thickness: 10,
+              color: Colors.grey[700],
+            ),
+            PostCard(
+              profilePicture: apj,
+              profileName: "APJ  Abdulkalam",
+              PublishedAt: "1h",
+              title: "Fine",
+              PostedImage: apjStory,
+              bluetickflag: true,
+              likes: "15K",
+              comments: "300",
+              share: "100K",
+            ),
+            Divider(
+              thickness: 2,
+              color: Colors.grey[400],
+            ),
+            LikeShareComment(),
+            Divider(
+              thickness: 10,
+              color: Colors.grey[700],
+            ),
+            thickDivider,
+            PostCard(
+              profilePicture: hamdan,
+              profileName: "Shiek Hamdan",
+              PublishedAt: "1day",
+              title: "",
+              PostedImage: hamdanStory,
+              bluetickflag: false,
+              likes: "15K",
+              comments: "300",
+              share: "100K",
+            ),
+            Divider(
+              thickness: 2,
+              color: Colors.grey[400],
+            ),
+            LikeShareComment(),
+            Divider(
+              thickness: 10,
+              color: Colors.grey[700],
+            ),
+            // thickDivider,
           ],
         ),
       ),

@@ -6,6 +6,7 @@ import 'package:my_facebookui/sections/likeShareCommentsButton.dart';
 import 'package:my_facebookui/sections/roomSection.dart';
 import 'package:my_facebookui/sections/statusSection.dart';
 import 'package:my_facebookui/sections/storiesSection.dart';
+import 'package:my_facebookui/sections/suggestionSection.dart';
 import 'package:my_facebookui/widgetsSample/assets.dart';
 import 'package:my_facebookui/widgetsSample/circularButton.dart';
 import 'package:my_facebookui/widgetsSample/postCard.dart';
@@ -110,6 +111,8 @@ class Home extends StatelessWidget {
               thickness: 10,
               color: Colors.grey[700],
             ),
+
+            SuggesionSection(),
             thickDivider,
             PostCard(
               profilePicture: hamdan,

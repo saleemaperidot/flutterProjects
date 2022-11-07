@@ -120,7 +120,10 @@ class PostCard extends StatelessWidget {
   Widget postedImage() {
     return Container(
       padding: EdgeInsets.only(top: 5, bottom: 5),
-      child: Image.asset(PostedImage),
+      child: Image.asset(
+        PostedImage,
+        fit: BoxFit.cover,
+      ),
 
       //     decoration: BoxDecoration(
       //   image: DecorationImage(

@@ -33,6 +33,9 @@ class SuggesionSection extends StatelessWidget {
                 children: [
                   // ignore: prefer_const_constructors
                   SuggessionCard(),
+                  SuggessionCard(),
+                  SuggessionCard(),
+                  SuggessionCard(),
                 ],
               )),
         ],
